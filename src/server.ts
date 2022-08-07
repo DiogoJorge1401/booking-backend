@@ -6,9 +6,7 @@ import './database/connect';
 import { routes } from './routes/routes';
 const app = e()
 
-const ORIGIN = process.env.ORIGIN || true
-
-app.use(cors({ credentials: true, origin: ORIGIN }))
+app.use(cors({ credentials: true, origin: true }))
 app.use(e.json())
 app.use(cookieParser())
 app.use('/api', routes)
