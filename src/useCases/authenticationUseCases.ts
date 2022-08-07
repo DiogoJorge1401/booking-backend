@@ -23,7 +23,7 @@ export class AuthUseCases {
       (process.env.JWT_SECRET as string)
     );
 
-    const { password, isAdmin, ...otherDetails } = user.toObject();
+    const { password, ...otherDetails } = user.toObject();
 
     return { token, data: otherDetails }
   }
