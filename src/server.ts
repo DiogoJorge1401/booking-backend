@@ -13,10 +13,6 @@ app.use(e.json())
 app.use(cookieParser())
 app.use('/api', routes)
 
-let host
+const PORT = process.env.PORT
 
-host = app.listen(3000, function () {
-  console.log(`app listening at `)
-  console.log(host);
-  console.log(this)
-})
+app.listen(PORT, () => console.log(`app listening at ${PORT}`))
