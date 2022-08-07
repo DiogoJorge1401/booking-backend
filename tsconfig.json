@@ -9,7 +9,7 @@
     "strictFunctionTypes": true,
     "strictPropertyInitialization": false,
     "strictBindCallApply": true,
-    "noImplicitThis": true,
+    "noImplicitThis": false,
     "noImplicitReturns": true,
     "alwaysStrict": true,
     "esModuleInterop": true,

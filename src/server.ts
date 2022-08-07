@@ -13,4 +13,10 @@ app.use(e.json())
 app.use(cookieParser())
 app.use('/api', routes)
 
-app.listen(3000, () => console.log('app listening at http://127.0.0.1:3000'))
+let host
+
+host = app.listen(3000, function () {
+  console.log(`app listening at `)
+  console.log(host);
+  console.log(this)
+})
